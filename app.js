@@ -5,8 +5,8 @@ const MongoClient = mongo.MongoClient;
 const dotenv = require("dotenv");
 dotenv.config();
 let port = process.env.PORT || 2008
-const mongoUrl = "mongodb+srv://mustaeen:plastion@realmcluster.ecbjk.mongodb.net/bnews?retryWrites=true&w=majority"
-// const mongoUrl = process.env.mongoUrl
+// const mongoUrl = "mongodb+srv://mustaeen:plastion@realmcluster.ecbjk.mongodb.net/bnews?retryWrites=true&w=majority"
+const mongoUrl = process.env.mongoLiveUrl;
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
